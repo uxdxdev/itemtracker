@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { doneStyle, SHEET_ID, API_KEY } from "./constants";
 import { responseValues } from "./utils";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 function fetchData(sheetName: string) {
   return fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${sheetName}?key=${API_KEY}`)
@@ -30,6 +31,7 @@ function AllItems({ sheetName }: { sheetName: string }) {
 
   return (
     <>
+      <Link to="/">back to pages</Link>
       <div className="mb-1">
         <label htmlFor="numberPerRow">Number of items per row</label>
         <input
