@@ -47,7 +47,7 @@ function App() {
               <div>
                 How to use this thing:
                 <ol>
-                  <li>Request access to edit the Google Sheet</li>
+                  <li>Open the Google Sheet database using the link above</li>
                   <li>
                     Add a new sheet, or duplicate an existing one, and name it. The name you pick will be the page URL,
                     e.g. <strong>itemtracker.surge.sh/#/Sheet1</strong>
