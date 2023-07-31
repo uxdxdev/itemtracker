@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Atkinson Hyperlegible&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible";
+  font-size: 24px;
+}
+
+input {
+  font-size: 24px;
+  width: 50px;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+path {
+  stroke: #1e1e1e;
+  fill: tomato;
+}
+
+@font-face {
+  font-family: "Virgil";
+  src: url("https://excalidraw.com/Virgil.woff2");
+}
+@font-face {
+  font-family: "Cascadia";
+  src: url("https://excalidraw.com/Cascadia.woff2");
+}
+
+img {
+  background-color: tomato;
+}
