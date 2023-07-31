@@ -31,6 +31,12 @@ function App() {
           database (Google Sheet)
         </a>
       </div>
+      <div className="font-xsmall">
+        Made by{" "}
+        <a href="https://www.twitch.tv/individualcontributor" target="_blank">
+          IndividualContributor
+        </a>
+      </div>
       <br />
       <Routes>
         <Route path={`/test`} element={<Bosses />} />
@@ -43,13 +49,26 @@ function App() {
                 <ol>
                   <li>Request access to edit the Google Sheet</li>
                   <li>
-                    Add a new sheet page. The name you pick will be the page URL, e.g.{" "}
-                    <strong>itemtracker.surge.sh/#/sheetname</strong>
+                    Add a new sheet, or duplicate an existing one, and name it. The name you pick will be the page URL,
+                    e.g. <strong>itemtracker.surge.sh/#/Sheet1</strong>
                   </li>
-                  <li>Add item names and image URLs to have them display on your page</li>
+                  <li>
+                    Add item names and image URLs to have them display on your page. Row order determines where your
+                    image will be displayed in the grid
+                  </li>
                   <li>Put any value in the "done" column to change the item background from red to green</li>
+                  <li>
+                    After creating your new sheet in the database refresh the browser on the homepage to see a link to
+                    your new page
+                  </li>
                 </ol>
-                <i>See other sheets in the database for the correct formatting</i>
+                <br />
+                <div className="font-small">
+                  <i>
+                    Your page will update every ~10 seconds, so once you've updated the "done" column on your sheet it
+                    will take ~10 seconds to see the item image background trun from red to green, or vice versa.
+                  </i>
+                </div>
               </div>
               <br />
               {data?.sheets.map((entry, index) => {
