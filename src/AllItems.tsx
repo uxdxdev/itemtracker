@@ -31,7 +31,10 @@ function AllItems({ sheetName }: { sheetName: string }) {
 
   return (
     <>
-      <Link to="/">back to pages</Link>
+      <div>
+        <Link to="/">back to pages</Link>
+      </div>
+      <br />
       <div className="mb-1">
         <label htmlFor="numberPerRow">Number of items per row</label>
         <input
