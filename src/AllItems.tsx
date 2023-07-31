@@ -50,14 +50,7 @@ function AllItems({ sheetName }: { sheetName: string }) {
           const imageUrl = entry["imageUrl"];
           const done = entry["done"];
           return (
-            <img
-              key={index}
-              width="50px"
-              title={name}
-              className=""
-              src={imageUrl}
-              style={{ backgroundColor: done && doneStyle }}
-            />
+            <img key={index} title={name} className="" src={imageUrl} style={{ backgroundColor: done && doneStyle }} />
           );
         })}
       </div>
