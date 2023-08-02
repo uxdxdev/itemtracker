@@ -1,17 +1,32 @@
 ![](./src/assets/banner.jpg)
 
-Let your chat track your items and follow along during your runs!
 
 ## How do I use this?
 
-- Request access for a trusted user (mod?) to update the [database](https://docs.google.com/spreadsheets/d/1_WhFuaqwixhp0ya8oOV_ECFGj1QhdQtukZq3P_VjYO8/edit?usp=sharing)
-- Create a new sheet and name it something, the name will be used in the URL, e.g. if sheet name is `purplenurple` then you can see your tracker at `<domain name>/purplenurple`
-- Use the Chrome browser to open the webpage, e.g. `<domain name>/purplenurple`
-- In OBS use a `Window Capture` to capture the webpage
-- Set items per row, then resize the browser window, and then crop the window in OBS to show only the section you need
-- Open `chrome://flags/` in the browser
-- Search for `Calculate window occlusion` and set to `Disabled`, this allows the webpage to keep updating in the background
-- Leave webpage open in a browser window in the background so it can update automatically, don't minimise it
+How to use this thing:
+<ol>
+  <li>Open the Google Sheet database using the link above</li>
+  <li>
+    Add a new sheet, or duplicate an existing one, and name it. The name you pick will be the page URL,
+    e.g. <strong>itemtracker.surge.sh/#/Sheet1</strong>
+  </li>
+  <li>
+    Add item names and image URLs to have them display on your page. Row order determines where your
+    image will be displayed in the grid
+  </li>
+  <li>Put any value in the "done" column to change the item background from red to green</li>
+  <li>
+    After creating your new sheet in the database refresh the browser on the homepage to see a link to
+    your new page
+  </li>
+</ol>
+<br />
+<div className="font-small">
+  <i>
+    Your page will update every ~10 seconds, so once you've updated the "done" column on your sheet it
+    will take ~10 seconds to see the item image background trun from red to green, or vice versa.
+  </i>
+</div>
 
 
 ## Webpage
