@@ -5,7 +5,7 @@
 
 How to use this thing:
 <ol>
-  <li>Open the Google Sheet database using [this link](https://docs.google.com/spreadsheets/d/1_WhFuaqwixhp0ya8oOV_ECFGj1QhdQtukZq3P_VjYO8/edit?usp=sharing)</li>
+  <li>Open the Google Sheet database using <a href="https://docs.google.com/spreadsheets/d/1_WhFuaqwixhp0ya8oOV_ECFGj1QhdQtukZq3P_VjYO8/edit?usp=sharing">this link</a></li>
   <li>
     Add a new sheet, or duplicate an existing one, and name it. The name you pick will be the page URL,
     e.g. <strong>itemtracker.surge.sh/#/Sheet1</strong>
